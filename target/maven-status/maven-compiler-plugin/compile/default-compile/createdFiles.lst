@@ -1,0 +1,8 @@
+senef\test\transfer_riddle\service\IRiddleService.class
+senef\test\transfer_riddle\config\CORSFilter.class
+senef\test\transfer_riddle\service\RiddleServiceImpl.class
+senef\test\transfer_riddle\config\AppBinder.class
+senef\test\transfer_riddle\config\ApplicationConfig.class
+senef\test\transfer_riddle\domaine\Tank.class
+senef\test\transfer_riddle\domaine\Step.class
+senef\test\transfer_riddle\resource\RiddleResource.class
