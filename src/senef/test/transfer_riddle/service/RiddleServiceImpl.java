@@ -54,9 +54,11 @@ public class RiddleServiceImpl implements IRiddleService {
 	private List<Step> solution(Tank tankOne, Tank tankTwo) {
 		List<Step> steps=new ArrayList<>();
 		boolean allConfigsBrowsed=false;
-		tankTwo.fillUp();
-		Step fillUp=new Step("*",tankTwo.getName(),tankA.getContent(), tankB.getContent());
-		steps.add(fillUp);
+		if(this.t!=0) {
+			tankTwo.fillUp();
+			Step fillUp=new Step("*",tankTwo.getName(),tankA.getContent(), tankB.getContent());
+			steps.add(fillUp);
+		}
 		while(!allConfigsBrowsed) {
 			if(tankOne.getContent()==this.t || tankTwo.getContent()==this.t) {//Solution founded
 				return steps;
